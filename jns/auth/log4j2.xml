@@ -91,9 +91,15 @@
         <Logger name="org.gluu.agama" level="debug" additivity="false" />
 
         <!-- Disable log -->
-        <Logger name="io.jans.service.timer" level="off" additivity="false" />
-        <Logger name="io.jans.as.server.service.logger" level="off" additivity="false" />
-        <Logger name="io.jans.as.server.service.ciba" level="off" additivity="false" />
+        <Logger name="io.jans.service.timer.RequestJobListener" level="error" additivity="false" />
+        <Logger name="io.jans.service.timer.TimerJob" level="error" additivity="false" />
+        <Logger name="io.jans.service.custom.script.CustomScriptManager" level="error" additivity="false" />
+        <Logger name="io.jans.as.server.service.logger.LoggerService" level="error" additivity="false" />
+        <Logger name="io.jans.as.server.service.ciba.CibaRequestsProcessorJob" level="error" additivity="false" />
+        <Logger name="io.jans.as.server.service.CleanerTimer" level="error" additivity="false" />
+        <Logger name="io.jans.ads.timer.DeployerTimer" level="error" additivity="false" />
+        <Logger name="io.jans.ads.Deployer" level="error" additivity="false" />
+        <Logger name="io.jans.agama.timer.Transpilation" level="error" additivity="false" />
 
         <!-- EMB-6, JMS activation throws an error due to deployment ordering, but as there is a timeout and retry the tests pass. Hide the error message -->
         <Logger name="jboss.resource.adapter.jms.inflow.JmsActivation" level="error" />
