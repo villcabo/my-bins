@@ -94,6 +94,7 @@
         <Logger name="io.jans.service.timer.RequestJobListener" level="error" additivity="false" />
         <Logger name="io.jans.service.timer.TimerJob" level="error" additivity="false" />
         <Logger name="io.jans.service.custom.script.CustomScriptManager" level="error" additivity="false" />
+        <Logger name="io.jans.service.logger.LoggerService" level="error" additivity="false" />
         <Logger name="io.jans.as.server.service.logger.LoggerService" level="error" additivity="false" />
         <Logger name="io.jans.as.server.service.ciba.CibaRequestsProcessorJob" level="error" additivity="false" />
         <Logger name="io.jans.as.server.service.CleanerTimer" level="error" additivity="false" />
