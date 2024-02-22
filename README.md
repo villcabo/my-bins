@@ -12,5 +12,5 @@ wget https://raw.githubusercontent.com/villcabo/my-bins/main/deployfido2.sh
 ## Jns
 
 ```
-wget https://raw.githubusercontent.com/villcabo/my-bins/main/jns/auth/log4j2.xml
+wget https://raw.githubusercontent.com/villcabo/my-bins/main/jns/auth/log4j2.xml -O log4j2.xml
 ```
