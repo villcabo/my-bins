@@ -56,6 +56,7 @@
         <Logger name="io.jans.service.timer.RequestJobListener" level="error" additivity="false" />
         <Logger name="io.jans.service.timer.TimerJob" level="error" additivity="false" />
         <Logger name="io.jans.service.logger.LoggerService" level="off" additivity="false" />
+        <Logger name="io.jans.as.server.service.CleanerTimer" level="error" additivity="false" />
 
         <Logger name="io.jans.orm" level="debug" additivity="false">
             <AppenderRef ref="FIDO2_PERSISTENCE_FILE" />
