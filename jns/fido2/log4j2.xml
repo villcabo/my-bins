@@ -50,11 +50,12 @@
 
     <Loggers>
         <!-- ############### Gluu ################# -->
-        <Logger name="io.jans" level="${log4j.default.log.level}" />
+        <Logger name="io.jans" level="debug" />
 
         <!-- Disable log -->
         <Logger name="io.jans.service.timer.RequestJobListener" level="error" additivity="false" />
         <Logger name="io.jans.service.timer.TimerJob" level="error" additivity="false" />
+        <Logger name="io.jans.service.logger.LoggerService" level="error" additivity="false" />
 
         <Logger name="io.jans.orm" level="debug" additivity="false">
             <AppenderRef ref="FIDO2_PERSISTENCE_FILE" />

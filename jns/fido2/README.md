@@ -6,6 +6,7 @@ Download file
 wget https://raw.githubusercontent.com/villcabo/my-bins/main/jns/fido2/log4j2.xml -O /opt/jans/jetty/jans-fido2/resources/log4j2.xml
 ```
 
+
 ## Setting in Configuration
 
 Find property
