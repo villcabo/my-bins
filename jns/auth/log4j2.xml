@@ -87,7 +87,7 @@
 
     <Loggers>
         <!-- ############### Gluu ################# -->
-        <Logger name="io.jans" level="debug" />
+        <Logger name="io.jans" level="trace" />
         <Logger name="org.gluu.agama" level="debug" additivity="false" />
 
         <!-- Disable log -->
@@ -95,6 +95,7 @@
         <Logger name="io.jans.service.timer.TimerJob" level="error" additivity="false" />
         <Logger name="io.jans.service.custom.script.CustomScriptManager" level="error" additivity="false" />
         <Logger name="io.jans.service.logger.LoggerService" level="off" additivity="false" />
+        <Logger name="io.jans.service.BaseCacheService" level="error" additivity="false" />
         <Logger name="io.jans.as.server.service.ciba.CibaRequestsProcessorJob" level="error" additivity="false" />
         <Logger name="io.jans.as.server.service.CleanerTimer" level="error" additivity="false" />
         <Logger name="io.jans.ads.timer.DeployerTimer" level="error" additivity="false" />
@@ -110,54 +111,54 @@
         <!-- ############### Hibernate logging ################# -->
         <Logger name="org.hibernate" level="error" />
 
-        <Logger name="io.jans.as.server.audit.debug" level="debug" additivity="false">
+        <Logger name="io.jans.as.server.audit.debug" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_HTTP_REQUEST_RESPONSE_FILE" />
         </Logger>
 
-        <Logger name="io.jans.orm" level="debug" additivity="false">
+        <Logger name="io.jans.orm" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_PERSISTENCE_FILE" />
         </Logger>
 
-        <Logger name="com.unboundid.ldap.sdk.LDAPConnection" level="debug" additivity="false">
+        <Logger name="com.unboundid.ldap.sdk.LDAPConnection" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_PERSISTENCE_FILE" />
         </Logger>
-        <logger name="com.couchbase.client" level="debug" additivity="false">
+        <logger name="com.couchbase.client" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_PERSISTENCE_FILE" />
         </logger>
 
-        <Logger name="io.jans.orm.ldap.operation.watch" level="debug" additivity="false">
+        <Logger name="io.jans.orm.ldap.operation.watch" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_PERSISTENCE_DURATION_FILE" />
         </Logger>
 
-        <Logger name="io.jans.orm.couchbase.operation.watch" level="debug" additivity="false">
+        <Logger name="io.jans.orm.couchbase.operation.watch" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_PERSISTENCE_DURATION_FILE" />
         </Logger>
 
-        <Logger name="io.jans.orm.watch" level="debug" additivity="false">
+        <Logger name="io.jans.orm.watch" level="debug" additivity="trace">
             <AppenderRef ref="JANS_AUTH_PERSISTENCE_DURATION_FILE" />
         </Logger>
 
-        <Logger name="io.jans.as.server.service.status.ldap" level="debug" additivity="false">
+        <Logger name="io.jans.as.server.service.status.ldap" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_PERSISTENCE_LDAP_STATISTICS_FILE" />
         </Logger>
 
-        <Logger name="io.jans.service.PythonService" level="debug" additivity="false">
+        <Logger name="io.jans.service.PythonService" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_SCRIPT_LOG_FILE" />
         </Logger>
 
-        <Logger name="io.jans.service.custom.script" level="debug" additivity="false">
+        <Logger name="io.jans.service.custom.script" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_SCRIPT_LOG_FILE" />
         </Logger>
 
-        <Logger name="io.jans.as.server.service.custom" level="debug" additivity="false">
+        <Logger name="io.jans.as.server.service.custom" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_SCRIPT_LOG_FILE" />
         </Logger>
 
-        <Logger name="io.jans.agama.engine.script.LogUtils" level="debug" additivity="false">
+        <Logger name="io.jans.agama.engine.script.LogUtils" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_SCRIPT_LOG_FILE" />
         </Logger>
 
-        <Logger name="io.jans.as.server.audit.ApplicationAuditLogger" level="debug" additivity="false">
+        <Logger name="io.jans.as.server.audit.ApplicationAuditLogger" level="trace" additivity="false">
             <AppenderRef ref="JANS_AUTH_AUDIT_LOG_FILE" />
         </Logger>
 
